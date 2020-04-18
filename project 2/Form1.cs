@@ -26,30 +26,66 @@ namespace project_2
         {
 
         }
-        int i = 1;
+        string username = "Atif";
+        string myPassword = "1234";
+        bool loggedIn = false;
+        int attempt = 1;
+        int MaxAttempts = 3;
+
         private void BtnLogin_Click(object sender, EventArgs e)
         {
-
-            while (i <= 3)
+            if (!loggedIn)
             {
-                if (TxtUser.Text == "khaled" && TxtPass.Text == "1234")
+
+                while (attempt <= MaxAttempts)
                 {
+                    if (TxtUser.Text != username)
+                    {
 
-                    MessageBox.Show("Login successful");
-                    break;
+                        MessageBox.Show("Invalid username, " + (MaxAttempts - attempt) + " attempts remaining");
+                        attempt++;
+                        return;
+                    }
+                    else
+                    {
+
+                        if (TxtPass.Text != myPassword)
+                        {
+
+                            attempt++;
+                            MessageBox.Show("Incorrect password," + (MaxAttempts - attempt) + " attempts remaining");
+                            return;
+                        }
+                        else
+                        {
+
+                            attempt = 1;
+                            loggedIn = true;
+                            MessageBox.Show("Hi " + username + ", your login successful");
+
+
+
+                            BtnLogin.Text = "Logout";
+
+                            break;
+                        }
+
+                    }
                 }
-
-                else
-                {
-                    MessageBox.Show("Incorrect username or password");
-                    i = i + 1;
-
-
-                }
-                
             }
-            i = 0;
+            else
+            {
+                BtnLogin.Text = "Login";
+
+                loggedIn = false;
+
+                TxtUser.Clear();
+                TxtPass.Clear();
+
+
+            }
         }
+           
 
         private void BtnRadio_Click(object sender, EventArgs e)
         {
@@ -79,6 +115,20 @@ namespace project_2
         {
             FrmPick01 frm = new FrmPick01 ();
             frm.ShowDialog();
+        }
+
+        private void TxtUser_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnRandomCombo_Click(object sender, EventArgs e)
+        {
+            FrmRandom frm = new FrmRandom();
+            frm.ShowDialog();
+
+
+
         }
     }
 }

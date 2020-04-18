@@ -26,6 +26,8 @@ namespace project_2
 
         private void BtnRe_Click(object sender, EventArgs e)
         {
+            this.DialogResult = DialogResult.OK;
+
 
         }
 

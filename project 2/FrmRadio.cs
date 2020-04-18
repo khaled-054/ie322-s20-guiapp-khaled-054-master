@@ -24,6 +24,15 @@ namespace project_2
 
         private void BtnReset_Click(object sender, EventArgs e)
         {
+            RdoYellow.ForeColor = Color.FromName("Black");
+            RdoBlue.ForeColor = Color.FromName("Black");
+            RdoGreen.ForeColor = Color.FromName("Black");
+            RdoRed.ForeColor = Color.FromName("Black");
+            RdoYellow2.ForeColor = Color.FromName("Black");
+            RdoBlue2.ForeColor = Color.FromName("Black");
+            RdoGreen2.ForeColor = Color.FromName("Black");
+            RdoRed2.ForeColor = Color.FromName("Black");
+
 
         }
 
@@ -57,6 +66,48 @@ namespace project_2
                 RdoYellow.ForeColor = Color.FromName("Yellow");
             else
                 RdoYellow.ForeColor = Color.FromName("Black");
+        }
+
+        private void RdoRed2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (RdoRed2.Checked == true)
+
+            {
+                RdoRed2.ForeColor = Color.FromArgb(255, 0, 0);
+            }
+            else
+                RdoRed2.ForeColor = Color.FromArgb(0, 0, 0);
+
+        }
+
+        private void RdoGreen2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (RdoGreen2.Checked == true)
+
+            {
+                RdoGreen2.ForeColor = Color.FromName("green");
+            }
+            else
+                RdoGreen2.ForeColor = Color.FromName("black");
+
+        }
+
+        private void RdoBlue2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (RdoBlue2.Checked == true)
+                RdoBlue2.ForeColor = Color.FromName("Blue");
+            else
+                RdoBlue2.ForeColor = Color.FromName("Black");
+
+        }
+
+        private void RdoYellow2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (RdoYellow2.Checked == true)
+                RdoYellow2.ForeColor = Color.FromName("Yellow");
+            else
+                RdoYellow2.ForeColor = Color.FromName("Black");
+
         }
     }
 }

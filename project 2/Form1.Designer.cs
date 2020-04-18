@@ -60,9 +60,10 @@
             // 
             // BtnExit
             // 
-            this.BtnExit.BackColor = System.Drawing.Color.Maroon;
-            this.BtnExit.ForeColor = System.Drawing.Color.Gainsboro;
-            this.BtnExit.Location = new System.Drawing.Point(220, 326);
+            this.BtnExit.BackColor = System.Drawing.SystemColors.Info;
+            this.BtnExit.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnExit.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BtnExit.Location = new System.Drawing.Point(221, 326);
             this.BtnExit.Name = "BtnExit";
             this.BtnExit.Size = new System.Drawing.Size(109, 57);
             this.BtnExit.TabIndex = 0;
@@ -72,8 +73,9 @@
             // 
             // BtnLogin
             // 
-            this.BtnLogin.BackColor = System.Drawing.Color.Maroon;
-            this.BtnLogin.ForeColor = System.Drawing.Color.Gainsboro;
+            this.BtnLogin.BackColor = System.Drawing.SystemColors.Info;
+            this.BtnLogin.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLogin.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.BtnLogin.Location = new System.Drawing.Point(34, 326);
             this.BtnLogin.Name = "BtnLogin";
             this.BtnLogin.Size = new System.Drawing.Size(109, 57);
@@ -89,8 +91,8 @@
             this.groupBox1.Controls.Add(this.LblUser);
             this.groupBox1.Controls.Add(this.TxtPass);
             this.groupBox1.Controls.Add(this.TxtUser);
-            this.groupBox1.ForeColor = System.Drawing.Color.Maroon;
-            this.groupBox1.Location = new System.Drawing.Point(23, 46);
+            this.groupBox1.ForeColor = System.Drawing.Color.SteelBlue;
+            this.groupBox1.Location = new System.Drawing.Point(22, 46);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(306, 243);
             this.groupBox1.TabIndex = 2;
@@ -100,22 +102,22 @@
             // LblPass
             // 
             this.LblPass.AutoSize = true;
-            this.LblPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.LblPass.ForeColor = System.Drawing.Color.Maroon;
+            this.LblPass.BackColor = System.Drawing.Color.Transparent;
+            this.LblPass.ForeColor = System.Drawing.Color.SteelBlue;
             this.LblPass.Location = new System.Drawing.Point(64, 125);
             this.LblPass.Name = "LblPass";
-            this.LblPass.Size = new System.Drawing.Size(69, 17);
+            this.LblPass.Size = new System.Drawing.Size(72, 18);
             this.LblPass.TabIndex = 3;
             this.LblPass.Text = "Password";
             // 
             // LblUser
             // 
             this.LblUser.AutoSize = true;
-            this.LblUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.LblUser.ForeColor = System.Drawing.Color.Maroon;
-            this.LblUser.Location = new System.Drawing.Point(65, 49);
+            this.LblUser.BackColor = System.Drawing.Color.Transparent;
+            this.LblUser.ForeColor = System.Drawing.Color.SteelBlue;
+            this.LblUser.Location = new System.Drawing.Point(58, 49);
             this.LblUser.Name = "LblUser";
-            this.LblUser.Size = new System.Drawing.Size(75, 17);
+            this.LblUser.Size = new System.Drawing.Size(78, 18);
             this.LblUser.TabIndex = 2;
             this.LblUser.Text = "UserName";
             // 
@@ -123,20 +125,22 @@
             // 
             this.TxtPass.Location = new System.Drawing.Point(168, 125);
             this.TxtPass.Name = "TxtPass";
-            this.TxtPass.Size = new System.Drawing.Size(100, 22);
+            this.TxtPass.Size = new System.Drawing.Size(100, 24);
             this.TxtPass.TabIndex = 1;
             // 
             // TxtUser
             // 
             this.TxtUser.Location = new System.Drawing.Point(168, 46);
             this.TxtUser.Name = "TxtUser";
-            this.TxtUser.Size = new System.Drawing.Size(100, 22);
+            this.TxtUser.Size = new System.Drawing.Size(100, 24);
             this.TxtUser.TabIndex = 0;
+            this.TxtUser.TextChanged += new System.EventHandler(this.TxtUser_TextChanged);
             // 
             // BtnRadio
             // 
-            this.BtnRadio.BackColor = System.Drawing.Color.Maroon;
-            this.BtnRadio.ForeColor = System.Drawing.Color.Gainsboro;
+            this.BtnRadio.BackColor = System.Drawing.SystemColors.Info;
+            this.BtnRadio.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnRadio.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.BtnRadio.Location = new System.Drawing.Point(470, 46);
             this.BtnRadio.Name = "BtnRadio";
             this.BtnRadio.Size = new System.Drawing.Size(109, 57);
@@ -147,8 +151,9 @@
             // 
             // BtnCombo
             // 
-            this.BtnCombo.BackColor = System.Drawing.Color.Maroon;
-            this.BtnCombo.ForeColor = System.Drawing.Color.Gainsboro;
+            this.BtnCombo.BackColor = System.Drawing.SystemColors.Info;
+            this.BtnCombo.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCombo.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.BtnCombo.Location = new System.Drawing.Point(645, 46);
             this.BtnCombo.Name = "BtnCombo";
             this.BtnCombo.Size = new System.Drawing.Size(109, 57);
@@ -159,8 +164,9 @@
             // 
             // BtnPictureBox
             // 
-            this.BtnPictureBox.BackColor = System.Drawing.Color.Maroon;
-            this.BtnPictureBox.ForeColor = System.Drawing.Color.Gainsboro;
+            this.BtnPictureBox.BackColor = System.Drawing.SystemColors.Info;
+            this.BtnPictureBox.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPictureBox.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.BtnPictureBox.Location = new System.Drawing.Point(997, 46);
             this.BtnPictureBox.Name = "BtnPictureBox";
             this.BtnPictureBox.Size = new System.Drawing.Size(109, 57);
@@ -171,8 +177,9 @@
             // 
             // BtnSelfiApp
             // 
-            this.BtnSelfiApp.BackColor = System.Drawing.Color.Maroon;
-            this.BtnSelfiApp.ForeColor = System.Drawing.Color.Gainsboro;
+            this.BtnSelfiApp.BackColor = System.Drawing.SystemColors.Info;
+            this.BtnSelfiApp.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSelfiApp.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.BtnSelfiApp.Location = new System.Drawing.Point(470, 361);
             this.BtnSelfiApp.Name = "BtnSelfiApp";
             this.BtnSelfiApp.Size = new System.Drawing.Size(109, 57);
@@ -182,9 +189,10 @@
             // 
             // BtnCheckBox
             // 
-            this.BtnCheckBox.BackColor = System.Drawing.Color.Maroon;
-            this.BtnCheckBox.ForeColor = System.Drawing.Color.Gainsboro;
-            this.BtnCheckBox.Location = new System.Drawing.Point(559, 122);
+            this.BtnCheckBox.BackColor = System.Drawing.SystemColors.Info;
+            this.BtnCheckBox.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCheckBox.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BtnCheckBox.Location = new System.Drawing.Point(558, 122);
             this.BtnCheckBox.Name = "BtnCheckBox";
             this.BtnCheckBox.Size = new System.Drawing.Size(109, 57);
             this.BtnCheckBox.TabIndex = 7;
@@ -194,8 +202,9 @@
             // 
             // BtnPictureBox2
             // 
-            this.BtnPictureBox2.BackColor = System.Drawing.Color.Maroon;
-            this.BtnPictureBox2.ForeColor = System.Drawing.Color.Gainsboro;
+            this.BtnPictureBox2.BackColor = System.Drawing.SystemColors.Info;
+            this.BtnPictureBox2.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPictureBox2.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.BtnPictureBox2.Location = new System.Drawing.Point(645, 361);
             this.BtnPictureBox2.Name = "BtnPictureBox2";
             this.BtnPictureBox2.Size = new System.Drawing.Size(109, 57);
@@ -205,8 +214,9 @@
             // 
             // BtnGroupieApp
             // 
-            this.BtnGroupieApp.BackColor = System.Drawing.Color.Maroon;
-            this.BtnGroupieApp.ForeColor = System.Drawing.Color.Gainsboro;
+            this.BtnGroupieApp.BackColor = System.Drawing.SystemColors.Info;
+            this.BtnGroupieApp.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnGroupieApp.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.BtnGroupieApp.Location = new System.Drawing.Point(997, 203);
             this.BtnGroupieApp.Name = "BtnGroupieApp";
             this.BtnGroupieApp.Size = new System.Drawing.Size(109, 57);
@@ -216,9 +226,10 @@
             // 
             // BtnProgress
             // 
-            this.BtnProgress.BackColor = System.Drawing.Color.Maroon;
-            this.BtnProgress.ForeColor = System.Drawing.Color.Gainsboro;
-            this.BtnProgress.Location = new System.Drawing.Point(1097, 122);
+            this.BtnProgress.BackColor = System.Drawing.SystemColors.Info;
+            this.BtnProgress.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnProgress.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BtnProgress.Location = new System.Drawing.Point(1098, 122);
             this.BtnProgress.Name = "BtnProgress";
             this.BtnProgress.Size = new System.Drawing.Size(109, 57);
             this.BtnProgress.TabIndex = 10;
@@ -227,8 +238,9 @@
             // 
             // BtnTimer
             // 
-            this.BtnTimer.BackColor = System.Drawing.Color.Maroon;
-            this.BtnTimer.ForeColor = System.Drawing.Color.Gainsboro;
+            this.BtnTimer.BackColor = System.Drawing.SystemColors.Info;
+            this.BtnTimer.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnTimer.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.BtnTimer.Location = new System.Drawing.Point(1190, 46);
             this.BtnTimer.Name = "BtnTimer";
             this.BtnTimer.Size = new System.Drawing.Size(109, 57);
@@ -238,9 +250,10 @@
             // 
             // BtnRandom
             // 
-            this.BtnRandom.BackColor = System.Drawing.Color.Maroon;
-            this.BtnRandom.ForeColor = System.Drawing.Color.Gainsboro;
-            this.BtnRandom.Location = new System.Drawing.Point(1097, 280);
+            this.BtnRandom.BackColor = System.Drawing.SystemColors.Info;
+            this.BtnRandom.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnRandom.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BtnRandom.Location = new System.Drawing.Point(1098, 280);
             this.BtnRandom.Name = "BtnRandom";
             this.BtnRandom.Size = new System.Drawing.Size(109, 57);
             this.BtnRandom.TabIndex = 12;
@@ -249,19 +262,22 @@
             // 
             // BtnRandomCombo
             // 
-            this.BtnRandomCombo.BackColor = System.Drawing.Color.Maroon;
-            this.BtnRandomCombo.ForeColor = System.Drawing.Color.Gainsboro;
+            this.BtnRandomCombo.BackColor = System.Drawing.SystemColors.Info;
+            this.BtnRandomCombo.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnRandomCombo.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.BtnRandomCombo.Location = new System.Drawing.Point(1190, 361);
             this.BtnRandomCombo.Name = "BtnRandomCombo";
-            this.BtnRandomCombo.Size = new System.Drawing.Size(116, 57);
+            this.BtnRandomCombo.Size = new System.Drawing.Size(121, 57);
             this.BtnRandomCombo.TabIndex = 13;
             this.BtnRandomCombo.Text = "RandomCombo";
             this.BtnRandomCombo.UseVisualStyleBackColor = false;
+            this.BtnRandomCombo.Click += new System.EventHandler(this.BtnRandomCombo_Click);
             // 
             // BtnDraw
             // 
-            this.BtnDraw.BackColor = System.Drawing.Color.Maroon;
-            this.BtnDraw.ForeColor = System.Drawing.Color.Gainsboro;
+            this.BtnDraw.BackColor = System.Drawing.SystemColors.Info;
+            this.BtnDraw.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnDraw.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.BtnDraw.Location = new System.Drawing.Point(470, 201);
             this.BtnDraw.Name = "BtnDraw";
             this.BtnDraw.Size = new System.Drawing.Size(109, 57);
@@ -271,9 +287,10 @@
             // 
             // BtnTalk
             // 
-            this.BtnTalk.BackColor = System.Drawing.Color.Maroon;
-            this.BtnTalk.ForeColor = System.Drawing.Color.Gainsboro;
-            this.BtnTalk.Location = new System.Drawing.Point(559, 280);
+            this.BtnTalk.BackColor = System.Drawing.SystemColors.Info;
+            this.BtnTalk.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnTalk.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BtnTalk.Location = new System.Drawing.Point(558, 280);
             this.BtnTalk.Name = "BtnTalk";
             this.BtnTalk.Size = new System.Drawing.Size(109, 57);
             this.BtnTalk.TabIndex = 15;
@@ -282,19 +299,21 @@
             // 
             // BtnManufacturingCell
             // 
-            this.BtnManufacturingCell.BackColor = System.Drawing.Color.Maroon;
-            this.BtnManufacturingCell.ForeColor = System.Drawing.Color.Gainsboro;
+            this.BtnManufacturingCell.BackColor = System.Drawing.SystemColors.Info;
+            this.BtnManufacturingCell.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnManufacturingCell.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.BtnManufacturingCell.Location = new System.Drawing.Point(997, 361);
             this.BtnManufacturingCell.Name = "BtnManufacturingCell";
-            this.BtnManufacturingCell.Size = new System.Drawing.Size(109, 57);
+            this.BtnManufacturingCell.Size = new System.Drawing.Size(138, 57);
             this.BtnManufacturingCell.TabIndex = 16;
             this.BtnManufacturingCell.Text = "ManufacturingCell";
             this.BtnManufacturingCell.UseVisualStyleBackColor = false;
             // 
             // BtnRoboticCell
             // 
-            this.BtnRoboticCell.BackColor = System.Drawing.Color.Maroon;
-            this.BtnRoboticCell.ForeColor = System.Drawing.Color.Gainsboro;
+            this.BtnRoboticCell.BackColor = System.Drawing.SystemColors.Info;
+            this.BtnRoboticCell.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnRoboticCell.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.BtnRoboticCell.Location = new System.Drawing.Point(645, 201);
             this.BtnRoboticCell.Name = "BtnRoboticCell";
             this.BtnRoboticCell.Size = new System.Drawing.Size(109, 57);
@@ -304,9 +323,10 @@
             // 
             // BtnArduino
             // 
-            this.BtnArduino.BackColor = System.Drawing.Color.Maroon;
-            this.BtnArduino.ForeColor = System.Drawing.Color.Gainsboro;
-            this.BtnArduino.Location = new System.Drawing.Point(1097, 442);
+            this.BtnArduino.BackColor = System.Drawing.SystemColors.Info;
+            this.BtnArduino.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnArduino.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BtnArduino.Location = new System.Drawing.Point(1098, 442);
             this.BtnArduino.Name = "BtnArduino";
             this.BtnArduino.Size = new System.Drawing.Size(109, 57);
             this.BtnArduino.TabIndex = 18;
@@ -315,9 +335,10 @@
             // 
             // BtnJohan
             // 
-            this.BtnJohan.BackColor = System.Drawing.Color.Maroon;
-            this.BtnJohan.ForeColor = System.Drawing.Color.Gainsboro;
-            this.BtnJohan.Location = new System.Drawing.Point(559, 442);
+            this.BtnJohan.BackColor = System.Drawing.SystemColors.Info;
+            this.BtnJohan.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnJohan.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BtnJohan.Location = new System.Drawing.Point(558, 442);
             this.BtnJohan.Name = "BtnJohan";
             this.BtnJohan.Size = new System.Drawing.Size(109, 57);
             this.BtnJohan.TabIndex = 19;
@@ -326,8 +347,9 @@
             // 
             // BtnABCAnalysis
             // 
-            this.BtnABCAnalysis.BackColor = System.Drawing.Color.Maroon;
-            this.BtnABCAnalysis.ForeColor = System.Drawing.Color.Gainsboro;
+            this.BtnABCAnalysis.BackColor = System.Drawing.SystemColors.Info;
+            this.BtnABCAnalysis.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnABCAnalysis.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.BtnABCAnalysis.Location = new System.Drawing.Point(1190, 203);
             this.BtnABCAnalysis.Name = "BtnABCAnalysis";
             this.BtnABCAnalysis.Size = new System.Drawing.Size(109, 57);
@@ -337,19 +359,22 @@
             // 
             // BtnGR
             // 
-            this.BtnGR.Location = new System.Drawing.Point(839, 461);
+            this.BtnGR.BackColor = System.Drawing.SystemColors.Info;
+            this.BtnGR.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnGR.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BtnGR.Location = new System.Drawing.Point(837, 442);
             this.BtnGR.Name = "BtnGR";
-            this.BtnGR.Size = new System.Drawing.Size(101, 38);
+            this.BtnGR.Size = new System.Drawing.Size(109, 57);
             this.BtnGR.TabIndex = 21;
             this.BtnGR.Text = "G&R";
-            this.BtnGR.UseVisualStyleBackColor = true;
+            this.BtnGR.UseVisualStyleBackColor = false;
             this.BtnGR.Click += new System.EventHandler(this.BtnGR_Click);
             // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.SystemColors.Info;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1323, 593);
             this.Controls.Add(this.BtnGR);
@@ -374,6 +399,8 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.BtnLogin);
             this.Controls.Add(this.BtnExit);
+            this.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.Name = "FrmMain";
             this.Text = "Main";
             this.Load += new System.EventHandler(this.FrmMain_Load);

@@ -30,6 +30,17 @@ namespace project_2
 
         private void BtnGenerate_Click(object sender, EventArgs e)
         {
+            int r = y.Next(0, 255);
+            int g = y.Next(0, 255);
+            int b = y.Next(0, 255);
+            label1.Text = Convert.ToString(r) + "_" + Convert.ToString(g) + "_" + Convert.ToString(b);
+            BtnGenerate.BackColor = Color.FromArgb(r, g, b);
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.OK;
 
         }
     }

@@ -22,5 +22,11 @@ namespace project_2
             Random r = new Random();
             CmbRand.Items.Add(r.Next(100, 999));
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            CmbRand.Items.Clear();
+
+        }
     }
 }
